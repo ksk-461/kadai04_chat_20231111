@@ -2,7 +2,11 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebas
 import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved } 
 from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
 
+<<<<<<< HEAD
 const firebaseConfig = A_key;
+=======
+const firebaseConfig = A_Key;
+>>>>>>> 587e721e01391407df248472fd4a1b3aab8cebcc
 const app = initializeApp(firebaseConfig);
 const db  = getDatabase(app);
 const dbRef = ref(db, "chat");
