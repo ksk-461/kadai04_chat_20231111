@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved } 
+import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved} 
 from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
 
 const firebaseConfig = A_key;
@@ -49,6 +49,13 @@ $(".container").on("click",".block", function(){
 onChildRemoved(dbRef, (data) => {
     $("#"+data.key).remove();
 });
+
+$("#signout").on("click",function(){
+    location.href = "login.html"
+});
+
+// サインアウトは見せかけ
+// 次回は管理方法も勉強したい
 
 /*
 memo:appendした内容はhoverではできないので、mouseenterで代替
