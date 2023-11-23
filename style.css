@@ -87,7 +87,8 @@ h2 {
     line-height: 100px;
     color: #fff;
     font-size: 0.3rem;
-    transition: 0.5s all;
+    /* transition: 0.5s all; */
+    /* どうも↑これがあると悪さするっぽい？ */
 }
 
 .block:hover {
