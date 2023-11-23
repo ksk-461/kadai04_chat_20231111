@@ -43,7 +43,7 @@ onChildAdded(dbRef, (data) =>{
 $(".container").on("click",".block", function(){
     const key = $(this).attr("id");
     const remove_item = ref(db,"chat/" + key);
-    $(this).fadeOut(600, function(){remove(remove_item)});
+    $(this).fadeOut(800, function(){remove(remove_item)});
 });
 
 onChildRemoved(dbRef, (data) => {
